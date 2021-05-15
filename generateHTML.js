@@ -21,3 +21,5 @@ function engineerCard(person) {
   return (htmlTemplate += `
     <div>${person.name}</div>`);
 }
+
+module.exports(employeeLoop);
