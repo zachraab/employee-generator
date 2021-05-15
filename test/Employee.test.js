@@ -23,4 +23,15 @@ describe("Employee", () => {
     //arrange
     expect(newID.id).toEqual(id);
   });
+
+  it("should return email of employee", () => {
+    //arrange
+    const email = "email@email.com";
+
+    //act
+    const newEmail = new Employee("blob", 123, email);
+
+    //arrange
+    expect(newEmail.email).toEqual(email);
+  });
 });

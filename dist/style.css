@@ -41,6 +41,7 @@ li {
 .card {
   background-color: var(--secondary);
   margin: 20px;
+  min-width: 150px;
   color: var(--text);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.746);
   position: relative;
