@@ -79,15 +79,30 @@ li {
   left: 2%;
   top: 70%;
   position: absolute;
-  background-image: linear-gradient(
-    to right,
-    var(--gradient) 30%,
-    var(--accent)
-  );
+  background-image: url("https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"),
+    linear-gradient(to right, var(--gradient) 30%, var(--accent));
+  background-blend-mode: difference;
   border-radius: 100%;
   z-index: -1;
   box-shadow: inset black 0 0 30px;
   animation: planet 10s ease-in-out;
+}
+#bg7 {
+  width: 100px;
+  height: 100px;
+  left: 0%;
+  top: 10%;
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    var(--primary) 30%,
+    var(--accent)
+  );
+  border-radius: 20px;
+  box-shadow: inset black 0 0 30px;
+  transition: transform 1s ease;
+  transform: translateX(-100%) rotateY(-180deg);
+  transform-origin: center right;
 }
 
 #bg5:hover::before {
@@ -105,7 +120,9 @@ li {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-image: linear-gradient(to bottom right, white, black);
+  background-image: url("https://images.unsplash.com/photo-1559173525-d16dfd7c17fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"),
+    linear-gradient(to bottom right, white, black);
+  background-blend-mode: screen;
   box-shadow: black 20px 20px 30px;
   animation: moon 10s ease-in-out infinite;
   animation-play-state: paused;
