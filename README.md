@@ -18,13 +18,13 @@ This is a command-line application that allows the user to dynamically generate 
 Required (Application Functionality)
 
 - [NodeJS](https://nodejs.org/en/)
-- [Inquirer](https://www.npmjs.com/package/inquirer)
-  - `npm i inquirer`
+- [Inquirer](https://www.npmjs.com/package/inquirer)  
+  `npm i inquirer`
 
 Optional (Testing)
 
-- [Jest](https://www.npmjs.com/package/jest)
-  - `npm i jest`
+- [Jest](https://www.npmjs.com/package/jest)  
+  `npm i jest`
 
 ## Instructions
 

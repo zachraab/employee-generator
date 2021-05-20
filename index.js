@@ -160,7 +160,7 @@ buildTeam = () => {
       internPrompt();
     } else {
       console.log("generate file");
-      generate("my-team.html", generateHTML(data));
+      generate("my-team.html", generateHTML(myTeamArray));
     }
   });
 };
@@ -175,33 +175,38 @@ const generate = (fileName, data) => {
 };
 
 const initManager = () => {
-  inquirer.prompt(managerQuestions).then((data) => {
-    if (data.class) {
-      data.class = "Manager";
-    } else {
-      console.log("Error: Employee must be a manager");
-      return;
-    }
-    const officeNumber = parseInt(data.officeNumber);
-    if (!data.name || !data.id || !data.email || !data.officeNumber) {
-      console.log("Error: Please answer all prompts");
-      return;
-    } else if (Number.isNaN(officeNumber)) {
-      console.log("Error: Office number must be a number");
-      return;
-    }
+  inquirer
+    .prompt(managerQuestions)
+    .then((data) => {
+      if (data.class) {
+        data.class = "Manager";
+      } else {
+        console.log("Error: Employee must be a manager");
+        return;
+      }
+      const officeNumber = parseInt(data.officeNumber);
+      if (!data.name || !data.id || !data.email || !data.officeNumber) {
+        console.log("Error: Please answer all prompts");
+        return;
+      } else if (Number.isNaN(officeNumber)) {
+        console.log("Error: Office number must be a number");
+        return;
+      }
 
-    const newManager = new Manager(
-      data.name,
-      data.id,
-      data.email,
-      data.officeNumber
-    );
-    myTeamArray.push(newManager);
-    console.log(myTeamArray);
+      const newManager = new Manager(
+        data.name,
+        data.id,
+        data.email,
+        data.officeNumber
+      );
+      myTeamArray.push(newManager);
+      console.log(myTeamArray);
 
-    buildTeam();
-  });
+      buildTeam();
+    })
+    .catch((error) => {
+      throw error;
+    });
 };
 
 initManager();
