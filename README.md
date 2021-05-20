@@ -36,5 +36,5 @@ Open your terminal and run `node index.js`, answer the prompts to generate cards
 
 ## Links
 
-[Example Webpage](https://zachraab.github.io/employee-generator/)  
+[Example Webpage](https://zachraab.github.io/employee-generator/my-team.html)  
 [GitHub Repository](https://github.com/zachraab/employee-generator)
