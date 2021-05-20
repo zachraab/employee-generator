@@ -1,4 +1,4 @@
-const htmlTemplate = `<!DOCTYPE html>
+let htmlTemplate = `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,14 +15,10 @@ const htmlTemplate = `<!DOCTYPE html>
       <h1>My Team</h1>
     </header>
     <main id="card-parent">
-      <div id="half-circle"></div>
-      <!-- blue stripe -->
+      <div id="half-circle"></div>    
       <div id="bg4"></div>
-      <!-- circle -->
       <div id="bg5"></div>
-      <div id="bg6"></div>
-
-      <!-- cards -->
+      <div id="bg6"></div> 
 
 `;
 
@@ -56,11 +52,11 @@ function managerCard(person) {
   <div class="card">
   <div class="card-header">
     <h3>${person.name}</h3>
-    <p>${person.class}</p>
+    <p>${person.getRole()}</p>
   </div>
   <ul>
     <li>ID: ${person.id}</li>
-    <li>e-mail: ${person.email}</li>
+    <li>e-mail: <a href="mailto:${person.email}">${person.email}</a></li>
     <li>Office #: ${person.officeNumber}</li>
   </ul>
 </div>`);
@@ -71,12 +67,16 @@ function engineerCard(person) {
   <div class="card">
   <div class="card-header">
     <h3>${person.name}</h3>
-    <p>${person.class}</p>
+    <p>${person.getRole()}</p>
   </div>
   <ul>
     <li>ID: ${person.id}</li>
-    <li>e-mail: ${person.email}</li>
-    <li>GitHub: <a href="https://github.com/${person.github}">${person.name}</a></li>
+    <li>e-mail: <a href="mailto:${person.email}?subject=Work"&body=Dear ${
+    person.name
+  },>${person.email}</a></li>
+    <li>GitHub: <a href="https://github.com/${person.github}">${
+    person.github
+  }</a></li>
   </ul>
 </div>`);
 }
@@ -86,11 +86,11 @@ function internCard(person) {
   <div class="card">
   <div class="card-header">
     <h3>${person.name}</h3>
-    <p>${person.class}</p>
+    <p>${person.getRole()}</p>
   </div>
   <ul>
     <li>ID: ${person.id}</li>
-    <li>e-mail: ${person.email}</li>
+    <li>e-mail: <a href="mailto:${person.email}">${person.email}</a></li>
     <li>School: ${person.school}</li>
   </ul>
 </div>`);
