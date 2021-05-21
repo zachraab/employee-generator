@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a command-line application that allows the user to dynamically generate a styled webpage that contains the names and information of their employees.
+This is a command-line application that allows a manager to dynamically generate a styled webpage that contains the names and information of their employees.
 
 ---
 
