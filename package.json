@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "yeehaw": "jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
