@@ -38,3 +38,4 @@ Open your terminal and run `node index.js`, answer the prompts to generate cards
 
 [Example Webpage](https://zachraab.github.io/employee-generator/my-team.html)  
 [GitHub Repository](https://github.com/zachraab/employee-generator)
+[Walkthrough Video](https://youtu.be/_zx4QKZAoEA)
