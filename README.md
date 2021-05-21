@@ -28,7 +28,7 @@ Optional (Testing)
 
 ## Instructions
 
-Open your terminal and run `node index.js`, answer the prompts to generate cards for each employee. When you have completed your roster and are asked if you would like to create another employee, select "`No, finish roster`" when prompted to generate another employee.
+Open your terminal and run `node index.js`, answer the prompts to generate cards for each employee. When you have completed your roster and are asked if you would like to create another employee, select "`No, finish roster`".
 
 ## Screenshot
 
