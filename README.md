@@ -32,7 +32,7 @@ Open your terminal and run `node index.js`, answer the prompts to generate cards
 
 ## Screenshot
 
-![Screenshot of Webpage](./employee-generator/images/screenshot.png)
+![Screenshot of Webpage](/images/screenshot.png)
 
 ## Links
 
