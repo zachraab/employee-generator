@@ -29,6 +29,7 @@ Optional (Testing)
 ## Instructions
 
 Open your terminal and run `node index.js`, answer the prompts to generate cards for each employee. When you have completed your roster, select `no` when prompted to generate another employee.
+
 ## Screenshot
 
 ![Screenshot of Webpage](./images/screenshot.png)
